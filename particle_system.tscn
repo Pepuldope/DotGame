@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7cl7dc0wo7dd"]
+
+[ext_resource type="Script" uid="uid://bj7drdfp2fmpt" path="res://particle_system.gd" id="1_b0n3f"]
+[ext_resource type="PackedScene" uid="uid://bc757vog2xtyo" path="res://particle.tscn" id="2_qsseh"]
+
+[node name="ParticleSystem" type="CanvasLayer"]
+layer = -1
+script = ExtResource("1_b0n3f")
+
+[node name="Particle" parent="." instance=ExtResource("2_qsseh")]
+texture_filter = 1
