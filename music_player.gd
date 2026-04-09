@@ -11,6 +11,7 @@ var _index   : int  = -1
 var _paused  : bool = false
 
 func _ready() -> void:
+	GameSettings.load_settings()
 	apply_volume()
 	finished.connect(_on_finished)
 	_shuffle_start()
